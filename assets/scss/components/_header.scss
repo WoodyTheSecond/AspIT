@@ -1,0 +1,25 @@
+.header {
+    background: linear-gradient(rgba($color-black, .9), rgba($color-green, .7)), url("/assets/img/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    height: 80rem;
+
+    &__nav {
+        width: 95vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 4rem;
+    }
+
+    &__logo {
+        width: 8rem;
+
+        img {
+            width: 100%;
+        }
+    }
+}
