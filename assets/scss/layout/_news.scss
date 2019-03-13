@@ -10,8 +10,8 @@
 
     &__boxes {
         display: grid;
-        grid-template-columns: repeat(6, minmax(20rem, 1fr));
-        grid-template-rows: 35rem 11rem;
+        grid-template-columns: repeat(6, minmax(25rem, 1fr));
+        grid-template-rows: 40rem 11rem;
         grid-gap: 1rem;
 
         div {
@@ -72,6 +72,195 @@
 
         &__button {
             margin-top: 1.5rem;
+        }
+    }
+
+    &__social {
+        grid-row: 2 / 3;
+        display: flex;
+        align-items: center;
+        padding: 0 5rem;
+        background-color: $color-green-dark;
+
+        img {
+            width: 4rem;
+            height: 4rem;
+            margin-right: 2rem;
+            cursor: pointer;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        align-self: center;
+        justify-self: center;
+
+        &:link, &:visited {
+            text-decoration: none;
+            border-bottom: 1px solid $color-green-dark;
+            padding: .5rem .8rem;
+            padding-top: .6rem;
+            transition: all .2s;
+            height: 2rem;
+            width: 14rem;
+        }
+
+        &:hover, &:active {
+            background: $color-green-dark;
+            color: $color-text-light;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .news {
+        &__boxes {
+            grid-template-columns: repeat(4, minmax(28rem, 1fr));
+            grid-template-rows: repeat(2, 40rem);
+        }
+
+        &__1, &__2, &__3, &__4 {
+            grid-row: 1 / 2;
+        }
+
+        &__5 {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .news {
+        &__boxes {
+            grid-template-columns: repeat(3, minmax(28rem, 1fr));
+            grid-template-rows: repeat(3, 40rem);
+        }
+
+        &__4 {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .news {
+        &__boxes {
+            grid-template-columns: repeat(2, minmax(28rem, 1fr));
+            grid-template-rows: repeat(4, 30rem);
+        }
+
+        &__1 {
+            img {
+                height: 70%;
+            }
+        }
+
+        &__2 {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+
+            img {
+                height: 70%;
+            }
+        }
+
+        &__3 {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+
+            img {
+                height: 70%;
+            }
+        }
+
+        &__4 {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+
+            img {
+                height: 70%;
+            }
+        }
+
+        &__5 {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+
+            img {
+                height: 70%;
+            }
+        }
+
+        &__subscribe {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+
+        &__social {
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+        }
+    }
+}
+
+@media (max-width: 675px) {
+    .news {
+        &__boxes {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(8, 25rem);
+        }
+
+        &__1 {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+
+            h3 {
+                margin: 0;
+            }
+        }
+
+        &__2 {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        &__3 {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+
+        &__4 {
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+        }
+
+        &__5 {
+            grid-column: 1 / 2;
+            grid-row: 5 / 6;
+        }
+
+        &__subscribe {
+            grid-column: 1 / 2;
+            grid-row: 6 / 7;
+            padding: 1rem;
+
+            p {
+                margin-top: .5rem;
+                margin-bottom: .5rem;
+            }
+
+            &__name, &__email {
+                width: 100%;
+                box-sizing: border-box;
+                margin: .5rem 0;
+                padding: 1rem;
+            }
+    
+            &__button {
+                margin-top: .5rem;
+            }
         }
     }
 }
