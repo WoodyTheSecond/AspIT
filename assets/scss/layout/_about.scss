@@ -10,18 +10,10 @@
     }
 
     &__boxes {
-        // display: flex;
-        // justify-content: space-between;
-        // flex-wrap: wrap;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
         grid-column-gap: 1rem;
         grid-row-gap: 3rem;
-        
-        & > * {
-            // width: 33%;
-            // min-width: 30rem;
-        }
     }
 
     &__afklaring {
