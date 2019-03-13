@@ -1,0 +1,32 @@
+.header {
+    &__hero {
+        max-width: 80rem;
+        margin: 0 auto;
+        margin-top: 20rem;
+
+        & * {
+            color: white;
+        }
+
+        &-text {
+            margin: 2rem 0;
+        }
+
+        &-contact {
+            display: inline-block;
+            padding: 1.5rem 3rem;
+
+            &:link, &:visited {
+                background: linear-gradient(to right, $color-green-dark 50%, $color-green 50%);
+                background-size: 200% 200%;
+                background-position: right bottom;
+                text-decoration: none;
+                transition: all .3s;
+            }
+
+            &:hover, &:active {
+                background-position: left bottom;
+            }
+        }
+    }
+}
