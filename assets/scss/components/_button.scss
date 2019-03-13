@@ -1,0 +1,27 @@
+.button {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    background-color: $color-green;
+    border: none;
+    transition: all .1s;
+    color: white;
+    cursor: pointer;
+
+    &:link, &:visited {
+        display: inline-block;
+        padding: 1.5rem 3rem;
+        background-color: $color-green;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    &:hover {
+        box-shadow: 4px 8px 30px rgba(0, 0, 0, .5);
+        transform: scale(1.05);
+    }
+
+    &:active {
+        box-shadow: none;
+        transform: scale(.95);
+    }
+}

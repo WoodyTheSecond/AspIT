@@ -11,26 +11,5 @@
         &-text {
             margin: 2rem 0;
         }
-
-        &-contact {
-            display: inline-block;
-            padding: 1.5rem 3rem;
-
-            &:link, &:visited {
-                background-color: $color-green;
-                text-decoration: none;
-                transition: all .2s;
-            }
-
-            &:hover {
-                box-shadow: 5px 10px 20px rgba(0, 0, 0, .5);
-                transform: scale(1.05);
-            }
-
-            &:active {
-                box-shadow: none;
-                transform: scale(.95);
-            }
-        }
     }
 }
