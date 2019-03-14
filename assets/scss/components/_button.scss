@@ -25,3 +25,27 @@
         transform: scale(.95);
     }
 }
+
+.button2 {
+    display: inline-block;
+
+    &:link, &:visited {
+        text-decoration: none;
+        border-bottom: 1px solid $color-green-dark;
+        padding: .5rem .8rem;
+        padding-top: .6rem;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background: $color-green-dark;
+        color: $color-text-light;
+        box-shadow: 4px 8px 30px rgba(0, 0, 0, .5);
+        transform: scale(1.05);
+    }
+
+    &:active {
+        box-shadow: none;
+        transform: scale(.95);
+    }
+}
