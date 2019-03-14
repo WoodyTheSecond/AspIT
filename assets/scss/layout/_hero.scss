@@ -3,13 +3,22 @@
         max-width: 80rem;
         margin: 0 auto;
         margin-top: 20rem;
+        padding: 2rem;
 
         & * {
-            color: white;
+            color: $color-text-light;
         }
 
-        &-text {
+        &__text {
             margin: 2rem 0;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        &__hero {
+            margin-top: 2rem;
         }
     }
 }

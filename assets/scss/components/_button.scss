@@ -3,7 +3,7 @@
     padding: 1.5rem 3rem;
     background-color: $color-green;
     border: none;
-    transition: all .1s;
+    transition: all .15s;
     color: white;
     cursor: pointer;
 
@@ -22,7 +22,7 @@
 
     &:active {
         box-shadow: none;
-        transform: scale(.95);
+        transform: scale(1);
     }
 }
 
@@ -34,7 +34,7 @@
         border-bottom: 1px solid $color-green-dark;
         padding: .5rem .8rem;
         padding-top: .6rem;
-        transition: all .2s;
+        transition: all .15s;
     }
 
     &:hover {
@@ -46,6 +46,6 @@
 
     &:active {
         box-shadow: none;
-        transform: scale(.95);
+        transform: scale(1);
     }
 }

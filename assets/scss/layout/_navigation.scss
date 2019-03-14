@@ -1,12 +1,13 @@
 .header {
     &__navigation {
-
-        &-items {
+        &__items {
             display: flex;
             align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
-        &-item {
+        &__item {
             list-style: none;
             white-space: nowrap;
 
@@ -44,5 +45,15 @@
                 cursor: pointer;
             }
         }
-    }   
+    }
+}
+
+@media (max-width: 510px) {
+    .header {
+        &__navigation {
+            &__item {
+                margin: 0 10rem;
+            }
+        }
+    }
 }
